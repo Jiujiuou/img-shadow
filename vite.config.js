@@ -10,4 +10,9 @@ export default defineConfig({
       "@": resolve(__dirname, "src"), // '@' 映射到 src 目录
     },
   },
+  build: {
+    rollupOptions: {
+      input: "template.html", // 更新后的入口文件
+    },
+  },
 });
